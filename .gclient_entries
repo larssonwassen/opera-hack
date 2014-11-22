@@ -1,0 +1,5 @@
+entries = {
+  'src': 'git+https://chromium.googlesource.com/external/webrtc',
+  'src/third_party/gflags/src': 'http://gflags.googlecode.com/svn/trunk/src@84',
+  'src/third_party/junit/': 'http://webrtc.googlecode.com/svn/deps/third_party/junit@3367',
+}

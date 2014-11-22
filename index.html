@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>PeerConnection server test page</title>
+<script type="text/javascript" src="servercon.js"></script>
+</head>
+<body>
+Server: <input type="text" id="server" value="http://tidsoptimist.duckdns.org:8888" /><br><input type="checkbox" id="loopback" checked="checked"/> Loopback (just send received messages right back)<br>
+Your name: <input type="text" id="local" value="my_name"/>
+<button id="connect" onclick="connect();">Connect</button>
+<button disabled="true" id="disconnect" onclick="disconnect();">Disconnect</button>
+<br>
+<table>
+  <tr>
+    <td>
+      Target peer id: <input type="text" id="peer_id" size="3"/>
+    </td>
+    <td>
+      Message: <input type="text" id="message"/></td>
+    <td>
+      <button disabled="true" id="send" onclick="send();">Send</button>
+    </td>
+  </tr>
+</table>
+<button onclick="document.getElementById('debug').innerHTML='';">Clear log</button>
+
+<pre id="debug">
+</pre>
+<br><hr>
+</body>
+</html>
